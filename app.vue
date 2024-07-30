@@ -6,9 +6,9 @@ const sendForm = async () => {
   console.log(text.value)
   
   try {
-    // const BASE_URL = 'https://test-crm.justconsult.md'
-    const BASE_URL = 'localhost'
-    const response = await fetch('/api/mt_lead', {
+    const BASE_URL = 'https://test-crm.justconsult.md/server/api/v3'
+    // const BASE_URL = 'http://localhost/server/api/v3'
+    const response = await fetch(BASE_URL + '/users/chm', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -33,7 +33,7 @@ const sendForm = async () => {
     Hello!
   </div>
   <div>
-    <form class="max-w-sm mx-auto">
+    <form class="max-w-sm mx-auto" autocomplete="off">
       <div class="mb-5">
         <label for="large-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Introdu
           ceva:</label>

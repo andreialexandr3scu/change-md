@@ -8,7 +8,7 @@ export default defineNuxtConfig({
         },
     },
     $development: {
-        //
+        // serverDir: '/',
     },
     modules: ["@nuxtjs/tailwindcss"]
 })
