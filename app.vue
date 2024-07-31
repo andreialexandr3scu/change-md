@@ -8,6 +8,7 @@ const sendForm = async () => {
   try {
     const BASE_URL = 'https://test-crm.justconsult.md/server/api/v3'
     // const BASE_URL = 'http://localhost/server/api/v3'
+    
     const response = await fetch(BASE_URL + '/users/chm', {
       method: 'POST',
       headers: {
