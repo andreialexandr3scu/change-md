@@ -15,7 +15,6 @@ const sendForm = async () => {
       },
       body: JSON.stringify({ text: text.value })
     })
-    
     if (!response.ok) {
       throw new Error('Network response was not ok')
     }
