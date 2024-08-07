@@ -47,7 +47,7 @@ const sendForm = async () => {
 
 <template>
   <div class="hello">
-    Hello!
+    Hello@!
   </div>
   <div>
     <form class="max-w-sm mx-auto" autocomplete="off">
