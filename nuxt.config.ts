@@ -10,5 +10,8 @@ export default defineNuxtConfig({
     $development: {
         // serverDir: '/',
     },
-    modules: ["@nuxtjs/tailwindcss"]
+    modules: ["@nuxtjs/tailwindcss"],
+    plugins: [
+        '~/plugins/vue3-toastify.ts'
+    ]
 })
