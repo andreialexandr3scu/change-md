@@ -4,7 +4,6 @@ const isLoading = ref(false);
 import { toast } from 'vue3-toastify';
 
 const sendForm = async () => {
-  // console.log('--------------------------------------------------')
   isLoading.value = true
   // toast.error("Wow so easy !", {
   //       autoClose: 1000,
@@ -12,7 +11,7 @@ const sendForm = async () => {
   // console.log(text.value)
   
   try {
-    const BASE_URL = 'https://test-crm.justconsult.md/server/api/v3'
+    const BASE_URL = 'https://crm.justconsult.md/server/api/v3'
     // const BASE_URL = 'http://localhost/server/api/v3'
     
     const response = await fetch(BASE_URL + '/users/chm', {
